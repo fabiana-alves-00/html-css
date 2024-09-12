@@ -1,0 +1,29 @@
+@charset "UTF-8"
+
+* {
+    font-family: Arial, Helvetica, sans-serif; }
+body
+{
+    background-image: linear-gradient(to right, #042940,#005C53, #9FC131, #DBF227);
+}
+main {
+background-color: rgb(255, 255, 255);
+width: 600px;
+padding: 10px;
+margin: auto;
+border-radius: 20px;
+box-shadow: 5px 5px 15px #454e006e;
+} 
+
+h1{
+    font: italic bolder 3em 'work sans', sans-serif;
+    
+}
+h2 {
+    font: bold 2em 'work sans', sans-serif ;
+}
+
+p {
+    font: italic lighter 16px ;
+text-align: justify;
+}
