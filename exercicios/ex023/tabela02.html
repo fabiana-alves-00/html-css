@@ -12,22 +12,35 @@
             font-size: 1.3em;
             font-weight: bold;
             padding:10px;
-            background-color: lightpink;
+            background-color: rgba(129, 128, 128, 0.427);
         }
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
             padding: 8px;
         }
         thead, tfoot{
-         background-color: rgba(255, 0, 115, 0.534);
+         background-color: rgb(68, 68, 68);
          color: white;
         }
         td.num {
            text-align: right; 
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(68, 68, 68);
+        }
+        tbody tr:nth-child(even) {
+            background-color: lightgray;
+        }
+        tbody tr:nth-child(odd) { /*odd/even.-n*/
+            background-color: darkgray;
+            
         }
     </style>
 </head>
@@ -51,8 +64,8 @@
 
             <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
             </thead>
             <tbody>
@@ -167,7 +180,7 @@
                     
             <tfoot>
            <tr>
-            <th>Total de habitantes</th>
+            <th scope="row">Total de habitantes</th>
             <td><strong>210.247.125</strong></td>
            </tr>
         
@@ -175,5 +188,6 @@
            </tr>
             </tfoot>
          </table>
+        
 </body>
 </html>
